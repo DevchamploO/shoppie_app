@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,500,700&display=swap');
+
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-family: 'Heebo', sans-serif;
+	position: relative;
+}
+
+img {
+	width: 100%;
+}
+
+ul {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, button {
+	font-family: 'Montserrat', Helvetica Neue, Helvetica, arial, sans-serif;
+}
+
+button, input[type="button"], input[type="submit"] {
+	padding: 8px 20px;
+	border: none;
+	background: #333;
+	color: #fff;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+	background: rgb(235,112,37);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.container {
+	width: 1300px;
+	margin: 0 auto;
+}
+
+.extra-padding {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.top-nav {
+	border-bottom: 1px solid #f3f3f3;
+	font-size: 13px;
+	background: #333;
+}
+
+.top-nav-wrapper {
+	display: flex;
+	justify-content: flex-end;
+	color: #fff;
+}
+
+#top-nav-bar #nav-bar{
+	display: flex;
+	margin: 0;
+	padding: 8px 0;
+}
+
+#top-nav-bar #nav-bar li {
+	margin-right: 30px;
+}
+
+#search-bar {
+	display: none;
+}
+
+.orderFirst {
+	order: 1;
+}
+
+.orderSecond {
+	order: 2;
+}
+
+.orderThree{
+	order: 3;
+}
+
+#site-header {
+	width: 100%;
+	background: #fff;
+	border-top: 6px solid #333;
+	z-index: 999;
+}
+
+/*---------------------
+   Navigation
+---------------------*/
+
+#nav-wrapper {
+	width: 100%;
+}
+
+.nav-items {
+	display: flex;
+	width: 100%;
+}
+
+.nav-items {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	transition: all 0.5s ease-in;
+}
+
+.logo {
+	font-family: 'Montserrat';
+}
+
+.dropdown-btn img {
+	width: 100%;
+	overflow: hidden;
+}
+
+.logo h1 {
+	margin: 0;
+	padding: 5px;
+	display: inline-block;
+	border: 2px solid #000;
+	font-family: 'Montserrat';
+	font-size: 1.2rem;
+	font-weight: 700;
+	letter-spacing: 4px;
+}
+
+.logo h1 a {
+	color: #000;
+}
+
+.nav-list {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+}
+
+.nav-list li {
+	height: inherit;
+}
+
+.nav-list li a {
+	margin-right: 15px;
+	padding: 0 10px;
+	font-size: 14px;
+	font-family: 'Montserrat', 'Helvetica Neue', helvetica, arial, sans-serif;
+	font-weight: 500;
+}
+
+.nav-list li a:hover {
+	box-shadow: 0px -6px 0px 0px rgba(235,112,37,.3) inset;
+	
+}
+
+/*-----------------
+  Homepage
+ ----------------*/
+
+.hero_promo {
+	display: flex;
+	height: 500px;
+	margin-bottom: 40px;
+	justify-content: space-evenly;
+	background-color: #c1d6cf;
+}
+
+.hero-image {
+	width: 700px;
+	margin-top: 50px;
+	margin-left: -60px;
+	background: url('https://demo2.wpopal.com/auros/wp-content/uploads/2018/10/h14-slider01.png');
+}
+
+#hero-text-wrapper {
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+#hero-text-wrapper h1 {
+	font-size: 50px;
+	margin-top: 0px;
+}
+
+#hero-text-wrapper a {
+	width: 200px;
+	display: block;
+	padding: 15px;
+	margin: 40px auto 0 auto;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 1px;
+	transition: all .3s ease-in;
+}
+
+#hero-text-wrapper a:hover {
+	background: rgb(235, 112, 37);
+}
+
+.tiles-wrapper {
+	display: flex;
+}
+
+.cover {
+	background-size: cover;
+	position: relative;
+}
+
+.left-tile-wrapper {
+	flex: 2;
+}
+
+.left-tile {
+	height: 646px;
+	background: url('https://www.keeksdesign.com/wp-content/uploads/2019/04/banner-1-shadow-1.jpg');
+}
+
+.right-tiles {
+	flex: 1;
+	margin-left: 30px;
+}
+
+.tile-size{
+	height: 308px;
+}
+
+.top-tile {
+	background: url('https://demo2.wpopal.com/auros/wp-content/uploads/2018/10/h9_ct02.jpg');
+}
+
+.bottom-tile {
+	margin-top: 30px;
+	background: url('https://www.keeksdesign.com/wp-content/uploads/2019/04/banner-3-1.jpg');
+}
+
+.cover a {
+	padding-top: 40px;
+	padding-left: 40px;
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	font-weight: 700;
+	transition: all 0.3s ease-in;
+}
+
+.cover a:hover {
+	color: #eb7025;
+}
+
+.home-info {
+	margin: 125px 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.home-info #stamp {
+	width: 80px;
+}
+
+.home-info p {
+	width:68%;
+	margin: 50px 0;
+}
+
+.home-info #signature{
+	width: 200px;
+}
+
+.product-listing{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 0;
+}
+
+.products {
+	padding-left: -20px;
+	padding-right: -20px;
+}
+
+.three {
+	flex: 0 0 23%;
+	width: 23%;
+	margin-bottom: 40px;
+	background: #fff;
+	text-align: center;
+	font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', arial, sans-serif;
+}
+
+.info {
+	display: block;
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.price {
+	color: #666;
+	font-size: 14px;
+}
+
+#responsive-nav {
+	position: fixed;
+	width: 50vw;
+	height: 100vh;
+	top: 0;
+	display: none;
+	background: #ccc;
+	z-index: -999;
+}
+
+.product-image a img{
+	width: 100%;
+	border: 0;
+}
+
+.dropdown-btn {
+	width: 50px;
+	display: none;
+	
+}
+
+.wrapper {
+	transform: translate3d(0px, 0px, 0x);
+	transition: all .5s;
+	position: relative;
+	left: 0;
+	height: 100%;
+}
+
+#wrapper {
+	margin-left: 0px;
+}
+
+#logo-wrapper {
+	display: flex;
+	width: 14%;
+	margin: 8px 0;
+	justify-content: center;
+	flex: 1;
+}
+
+.reverse-align {
+	justify-content: flex-end;
+}
+
+.flex-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.image-left-wrapper {
+	flex: 0 0 50%;
+}
+
+.info-right-wrapper {
+	flex: 0 0 50%;
+	padding-left: 70px;
+}
+
+.product-title {
+	font-size: 38px;
+	margin-bottom: 10px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#product-price {
+	margin-bottom: 30px;
+}
+
+.product-section-title {
+	display: none;
+}
+
+.money-whole {
+	font-size: 32px;
+}
+
+.amount {
+	display: none;
+}
+
+.description {
+	margin: 30px 0;
+	font-size: 14px;
+	font-family: 'Noto Serif', Serif;
+	color: #444;
+}
+
+.add-to-cart .title{
+	width: 60px;
+	padding: 5px 4px;
+	border: 1px solid #ccc;
+	font-size: 18px;
+}
+
+.add-to-cart #add-to-cart-button {
+	width: 60%;
+	margin-left: 20px;
+}
+
+#main-image img {
+	width: 100%;
+}
+
+#product-thumbnails {
+	display: flex;
+}
+
+.tmb-all {
+	width: 80px;
+	height: 80px;
+	margin-right:20px;
+	overflow: hidden;
+	
+}
+
+.tmb-all a img {
+	width: 100%;
+}
+
+#product-thumbnails li.selected {
+	border: 1px solid #000;
+}
+
+#taxon-crumbs {
+	display: none;
+}
+
+#cart-detail {
+	margin-top: 30px;
+	width: 100%
+}
+
+.line-item td {
+	padding: 23px 23px 23px 0;
+	text-align: center;
+}
+
+.line-item {
+	border-bottom: 1px solid #eee;
+}
+
+.money-whole {
+	font-size: 24px;
+}
+
+.line_item_quantity {
+	width: 63px;
+	padding-left: 5px;
+	font-size: 20px;
+	border: 1px solid #ccc;
+}
+
+.cart-item-image {
+	width: 100px;
+}
+
+.cart-item-delete {
+	text-align: left;
+}
+
+.cart-item-delete a img{
+	width: 20px;
+}
+
+.cart-total {
+	font-size: 32px;
+}
+
+.checkout {
+	width: 200px;
+	background: orange;
+	font-weight: bold;
+}
+
+.links, #empty-cart {
+	width: 89%;
+	text-align: right;
+}
+
+#empty-cart {
+	margin-top: 40px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.continue {
+	text-decoration: underline;
+}
+
+#coupon_code {
+	display: none;
+}
+
+footer {
+	position: absolute;
+	margin-top: 100px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	width: 100%;
+	background: #f7f7f7;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+@media screen and (max-width: 1400px) {
+	.container {
+		width: 100%;
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.container{
+		padding: 20px;
+	}
+
+	#site-header{
+		position: fixed;
+		border-bottom: 1px solid #f3f3f3;
+	}
+
+	#logo-wrapper {
+		justify-content: space-between;
+	}
+
+	.nav-items, .nav-list {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.nav-list {
+		display: none;
+		overflow: hidden;
+		transition: all 0.5s ease;
+	}
+
+	.slide {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.mobile-nav {
+		margin-top: 0px;
+	}
+
+	.nav-list li {
+		margin: 10px 0;
+		text-align: center;
+	}
+
+	.nav-list li a {
+		padding: 10px;
+		font-size: 22px;
+	}
+
+	.nav-list li a:hover {
+		border: none;
+	}
+
+	.orderSecond {
+		order: 1
+	}
+
+	.orderFirst {
+		order: 2;
+	}
+
+	.orderThree {
+		order: 3;
+	}
+
+	.home-info p {
+		width: 100%;
+	}
+
+	.dropdown-btn {
+		display: block;
+	}
+
+	.dropdown-btn img {
+		width: 100%;
+	}
+	
+	#logo-wrapper {
+		width: auto;
+	}
+
+	#content {
+		margin-top: 110px;
+	}
+
+	.hero_promo {
+		background-image: url("https://demo2.wpopal.com/auros/wp-content/uploads/2018/10/h14-slider01.png");
+		background-size: 400px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.hero-image {
+		display: none;
+	}
+
+	.tiles-wrapper {
+		flex-direction: column;
+	}
+	.left-tile-wrapper {
+		margin-bottom: 40px;
+	}
+
+	.right-tiles {
+		margin-left: 0;
+		display: flex;
+	}
+
+	.three {
+		flex: 0 0 48%;
+		width: 48%;
+	}
+
+	.image-left-wrapper, .info-right-wrapper{
+		flex: 0 0 98%;
+		width: 98%;
+	}
+
+	.cover {
+		flex: 1;
+	}
+
+	.info-right-wrapper {
+		padding-left: 0;
+	}
+
+	.top-tile {
+		margin-right: 10px;
+	}
+
+	.bottom-tile {
+		margin-top: 0;
+		margin-left: 10px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.right-tiles {
+		display: block;
+	}
+
+	.top-tile {
+		margin-right: 0;
+	}
+
+	.bottom-tile {
+		margin-top: 30px;
+		margin-left: 0;
+	}
+
+	.three {
+		flex: 0 0 98%;
+		width: 98%;
+	}
+}
+
+@media (max-device-height: 480px) and (orientation: landscape) {
+	.nav-wrapper {
+		max-height: 350px;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+}

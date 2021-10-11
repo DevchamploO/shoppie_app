@@ -1,0 +1,38 @@
+<!--<header id="header" class="row" data-hook>
+  <figure id="logo" class="columns six" data-hook><%= logo %></figure>
+    <%= render partial: 'spree/shared/nav_bar' %>
+      <%= render partial: 'spree/shared/main_nav_bar' if store_menu? %>
+</header>-->
+<header id="site-header">
+	<div class="nav-wrapper">
+		<div class="container extra-padding">
+			<div class="nav-items">
+				<div id="logo-wrapper" class="orderSecond">
+					<div class="logo">
+						<h1><a href="/">SHOPPIE</a></h1>
+					</div>
+					<div class="dropdown-btn">
+					<img src="https://cdn.onlinewebfonts.com/svg/img_251231.png">
+					</div>	
+				</div>
+				<ul class="nav-list orderFirst">
+					<li><a href="/products">All</a></li>
+					<li><a href="/t/all/tables">Tables</a></li>
+					<li><a href="/t/all/chairs">Chairs</a></li>
+					<li><a href="/t/all/lamps">lamps</a></li>
+					<li><a href="https://devchamploo.github.io" target="_blank">Contact</a></li>
+				</ul>
+				<ul class="nav-list orderThree reverse-align mobile-nav">
+					<%= render 'spree/shared/login_bar_items' %>
+					<li id="link-to-cart">
+						<noscript>
+							<%= link_to t('spree.cart'), spree.cart_path %>
+						</noscript>
+						&nbsp;
+					</li>
+					<script>Spree.fetch_cart('<%= j spree.cart_link_path %>')</script>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
